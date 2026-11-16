@@ -1,0 +1,23 @@
+{
+  "slug": "a-scan-b-scan",
+  "order": 20,
+  "category": "影像判讀",
+  "title": "一條 A-scan 如何變成一張 B-scan？",
+  "summary": "用一個可操作的截面圖，把單點深度剖面與整張二維影像對起來。",
+  "sections": [
+    {
+      "heading": "A-scan 是一個位置的深度剖面",
+      "paragraphs": ["固定光束的橫向位置，沿深度排列回波訊號，得到一條 A-scan。深度剖面上的峰值對應較強的回波，例如某些材料介面會因折射率改變而產生較明顯的反射。"]
+    },
+    {
+      "heading": "B-scan 把相鄰的剖面排在一起",
+      "paragraphs": ["沿樣本表面橫向移動光束，在每個位置取得一條 A-scan，再依位置排列成 B-scan。B-scan 的橫軸是橫向位置，縱軸是深度，亮度則顯示經處理後的回波強度。", "在下方示意圖移動選線。右側曲線會取用左側截面的同一列垂直像素，因此左圖的亮層若變深，右圖的峰值也會跟著往下移。"]
+    }
+  ],
+  "demo": "scan",
+  "takeaway": "B-scan 的每一個垂直欄位，都可對應到該橫向位置的一條 A-scan。",
+  "question": {"prompt": "若某個介面在截面右側逐漸變深，選線由左移到右時，A-scan 上對應的峰值會往哪裡移？", "answer": "峰值會沿深度軸往較深處移動。在這張把深度往下畫的示意圖中，峰值會往下移。"},
+  "sources": [
+    {"label": "Fercher 等人（2003），Optical coherence tomography—principles and applications", "url": "https://doi.org/10.1088/0034-4885/66/2/204"}
+  ]
+}

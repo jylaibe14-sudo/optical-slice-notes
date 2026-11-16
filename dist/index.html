@@ -1,0 +1,66 @@
+<!doctype html>
+<html lang="zh-Hant">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="description" content="給第一次接觸 OCT 的你。從光的干涉開始，用互動示意讀懂一條深度訊號如何組成一張截面影像。">
+  <title>光學切片筆記｜OCT 入門講義</title>
+  <link rel="stylesheet" href="./assets/site.css">
+</head>
+<body>
+  <a class="skip" href="#main">跳到內容</a>
+  <header class="site-header">
+    <div class="wrap topbar">
+      <a class="brand" href="./index.html"><span class="brand-mark" aria-hidden="true"></span>光學切片筆記</a>
+      <nav aria-label="主要導覽">
+        <a href="./index.html#lessons">講義目錄</a>
+        <a href="./index.html#scan">掃描示意</a>
+      </nav>
+    </div>
+  </header>
+  <main id="main"><div class="wrap">
+  <div class="hero">
+    <div class="hero-copy">
+      <p class="eyebrow">光學同調斷層掃描 · OCT</p>
+      <h1>光學切片<br>筆記<span>。</span></h1>
+      <p class="intro">給第一次接觸 OCT 的你。從光的干涉開始，用互動示意讀懂一條深度訊號如何組成一張截面影像。</p>
+      <a class="button" href="#lessons">瀏覽講義 <span aria-hidden="true">↓</span></a>
+    </div>
+    <section class="demo" id="scan" aria-labelledby="scan-title">
+    <div class="demo-head"><h2 id="scan-title">掃描示意</h2><span>教學模擬</span></div>
+    <p id="scan-help">移動滑桿，觀察 B-scan 選線位置和 A-scan 回波峰值的對應。</p>
+    <div class="plots">
+      <figure><figcaption><strong>B-scan</strong><span>二維截面</span></figcaption>
+        <canvas width="360" height="192" data-section aria-label="由多條 A-scan 組成的模擬截面，虛線標示選定欄位"></canvas>
+        <div class="plot-axis"><span>深度 ↓</span><span>橫向位置 →</span></div>
+      </figure>
+      <figure><figcaption><strong>A-scan</strong><span>單點深度剖面</span></figcaption>
+        <canvas width="240" height="192" data-profile aria-label="所選欄位的模擬回波強度隨深度變化的曲線"></canvas>
+        <div class="plot-axis"><span>深度 ↓</span><span>相對回波強度 →</span></div>
+      </figure>
+    </div>
+    <div class="scan-control" hidden>
+      <label for="scan-position">橫向位置</label>
+      <input id="scan-position" type="range" min="0" max="359" value="142" aria-describedby="scan-help">
+      <output for="scan-position" data-position></output>
+    </div>
+    <noscript><p>啟用 JavaScript 可操作掃描示意。B-scan 的每一欄對應一條 A-scan。</p></noscript>
+  </section>
+  </div>
+  <section id="lessons" class="directory" aria-labelledby="lessons-title">
+    <div class="section-heading"><h2 id="lessons-title">講義目錄</h2><span>2 篇講義</span></div>
+    <ol class="cards"><li>
+      <a class="card" href="lessons/oct-basics.html">
+        <div class="card-meta"><span>第 01 篇</span><span>成像原理</span></div>
+        <h3>OCT 如何看見樣本內部？</h3><p>從參考光和樣本回波開始，理解儀器如何把光的干涉訊號轉成深度資訊。</p><span class="card-arrow" aria-hidden="true">↗</span>
+      </a></li><li>
+      <a class="card" href="lessons/a-scan-b-scan.html">
+        <div class="card-meta"><span>第 02 篇</span><span>影像判讀</span></div>
+        <h3>一條 A-scan 如何變成一張 B-scan？</h3><p>用一個可操作的截面圖，把單點深度剖面與整張二維影像對起來。</p><span class="card-arrow" aria-hidden="true">↗</span>
+      </a></li></ol>
+  </section>
+</div></main>
+  <footer class="site-footer"><div class="wrap"><span>光學切片筆記</span><span>OCT 光學同調斷層掃描</span></div></footer>
+  <script src="./assets/scan.js" defer></script>
+</body>
+</html>

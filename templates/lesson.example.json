@@ -1,0 +1,14 @@
+{
+  "slug": "new-topic",
+  "order": 30,
+  "category": "成像原理",
+  "title": "以一個問題為講義標題",
+  "summary": "說明讀完本頁將理解的觀念。",
+  "sections": [
+    {"heading": "從問題開始", "paragraphs": ["寫下第一段內容。"]},
+    {"heading": "用例子理解", "paragraphs": ["寫下第二段內容。"]}
+  ],
+  "takeaway": "用一句話濃縮知識點。",
+  "question": {"prompt": "寫一題理解題。", "answer": "補上可由本文推得的答案。"},
+  "sources": [{"label": "更換為實際使用的學術來源", "url": "https://doi.org/10.1088/0034-4885/66/2/204"}]
+}

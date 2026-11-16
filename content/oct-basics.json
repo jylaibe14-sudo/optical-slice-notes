@@ -1,0 +1,23 @@
+{
+  "slug": "oct-basics",
+  "order": 10,
+  "category": "成像原理",
+  "title": "OCT 如何看見樣本內部？",
+  "summary": "從參考光和樣本回波開始，理解儀器如何把光的干涉訊號轉成深度資訊。",
+  "sections": [
+    {
+      "heading": "把光分成兩條路",
+      "paragraphs": ["光學同調斷層掃描（Optical Coherence Tomography，OCT）以低同調干涉取得樣本內不同深度的回波資訊。光進入干涉儀後分成兩路：參考光由參考鏡反射，樣本光則在樣本中傳播，部分光從介面或散射體返回。兩路回光在偵測端疊合。"]
+    },
+    {
+      "heading": "從光程差辨識深度",
+      "paragraphs": ["以時域 OCT（Time-domain OCT，TD-OCT）為例，移動參考鏡會改變參考臂的光程。當兩路回光的光程差落在光源同調長度的量級內，就能觀察到明顯的干涉訊號。掃描參考臂便可取得單一橫向位置的深度剖面。", "光程同時受幾何距離和折射率影響。要把量到的光程延遲換成實際厚度，需要考慮介質折射率和光的往返路徑。"]
+    }
+  ],
+  "takeaway": "OCT 利用參考光和樣本回波的干涉，把光程差對應到樣本深度。",
+  "question": {"prompt": "兩個樣本的幾何厚度相同，OCT 量到的光程差一定相同嗎？", "answer": "不一定。材料的折射率可能不同，使相同幾何厚度對應到不同光程。"},
+  "sources": [
+    {"label": "Fercher 等人（2003），Optical coherence tomography—principles and applications", "url": "https://doi.org/10.1088/0034-4885/66/2/204"},
+    {"label": "Huang 等人（1991），Optical coherence tomography", "url": "https://doi.org/10.1126/science.1957169"}
+  ]
+}
